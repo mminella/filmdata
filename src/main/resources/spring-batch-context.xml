@@ -14,12 +14,16 @@
 		<property name="jobRepository" ref="jobRepository" />
 	</bean>
 
+	<!-- ItemReader that reads multiple files -->
+	<bean id="itemReader" class="org.springframework.batch.item.file.MultiResourceItemReader">
+		<property name="delegate" ref="xmlItemReader"/>
+		<property name="resources" value="classpath:/films/*.xml"/>
+	</bean>
+
 	<!-- ItemReader which reads data from XML file -->
 	<bean id="xmlItemReader" class="org.springframework.batch.item.xml.StaxEventItemReader">
 
-		<property name="resource" value="classpath:TITANIC.xml" />
-
-		<property name="fragmentRootElementName" value="Result" />
+		<property name="fragmentRootElementName" value="FilmDetail" />
 
 		<property name="unmarshaller">
 			<bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
@@ -39,8 +43,7 @@
 		<property name="sql">
 			<value>
                 <![CDATA[        
-                    insert into films(film_code, film_name, imdb, directors, actors) 
-                    values (?, ?, ?, ?, ?)
+                    insert into films(film_code, film_name, imdb, directors, actors) values (?, ?, ?, ?, 'Actor')
                 ]]>
 			</value>
 		</property>
@@ -66,7 +69,7 @@
 	<batch:job id="examResultJob">
 		<batch:step id="step1">
 			<batch:tasklet transaction-manager="transactionManager">
-				<batch:chunk reader="xmlItemReader" writer="databaseItemWriter"
+				<batch:chunk reader="itemReader" writer="databaseItemWriter"
 					processor="itemProcessor" commit-interval="10" />
 			</batch:tasklet>
 		</batch:step>
