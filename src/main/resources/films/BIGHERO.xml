@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Result>
+  <ResultDetails>
+  <SearchFilmResult ItemType="film">
+     <FilmDetails>
+        <FilmDetail>
+           <Film Code="BIGHERO"><![CDATA[Big Hero 6 (2014)]]></Film>
+           <Imdb>8.4</Imdb>
+           <FilmInformation>
+                <Director><![CDATA[Don Hall]]></Director> 
+                <Actors>
+                    <Actor1><![CDATA[Ryan Potter]]></Actor1>
+                    <Actor2><![CDATA[Scott Adsit]]></Actor2>
+                    <Actor3><![CDATA[Jamie Chung]]></Actor3>
+                </Actors>  
+           </FilmInformation>
+        </FilmDetail>
+     </FilmDetails>
+  </SearchFilmResult>
+  </ResultDetails>
+</Result>

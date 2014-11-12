@@ -12,20 +12,18 @@ import org.eclipse.persistence.oxm.annotations.XmlPath;
 public class Film {
 
 	@XmlPath(value = "Film/@Code")
-    public String filmCode;
+	public String filmCode;
 
-	@XmlElement(name="Film")
-    private String filmName;
+	@XmlElement(name = "Film")
+	private String filmName;
 
-	@XmlElement(name="Imdb")
-    private String imdb;
+	@XmlElement(name = "Imdb")
+	private String imdb;
 
 	@XmlPath(value = "FilmInformation/Director/text()")
-    private String directors;
- 
-    private String actors;
-    
-    public String getFilmCode() {
+	private String directors;
+
+	public String getFilmCode() {
 		return filmCode;
 	}
 
@@ -33,39 +31,18 @@ public class Film {
 		return filmName;
 	}
 
-//	public void setFilmName(String filmName) {
-//		this.filmName = filmName;
-//	}
-//
 	public String getImdb() {
 		return imdb;
 	}
 
-//	public void setImdb(String imdb) {
-//		this.imdb = imdb;
-//	}
-//
 	public String getDirectors() {
 		return directors;
 	}
 
-//	public void setDirectors(String directors) {
-//		this.directors = directors;
-//	}
-//
-//	@XmlElement(name = "Actors")
-//	public String getActors() {
-//		return actors;
-//	}
-//
-//	public void setActors(String actors) {
-//		this.actors = actors;
-//	}
-
 	@Override
-    public String toString() {
-        return "Film [filmCode=" + filmCode + ", filmName=" + filmName
-                + ", directors=" + directors + ", imdb=" + imdb + "]";
-    }
- 
+	public String toString() {
+		return "Film [filmCode= " + filmCode + ", filmName= " + filmName
+				+ ", directors= " + directors + ", imdb= " + imdb + "]";
+	}
+
 }
