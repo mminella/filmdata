@@ -43,7 +43,7 @@
 		<property name="sql">
 			<value>
                 <![CDATA[        
-                    insert into films(film_code, film_name, imdb) values (?, ?, ?)
+                    insert ignore into films(film_code, film_name, imdb) values (?, ?, ?)
                 ]]>
 			</value>
 		</property>

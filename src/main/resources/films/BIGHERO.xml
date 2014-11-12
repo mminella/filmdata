@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Result>
-  <ResultDetails>
-  <SearchFilmResult ItemType="film">
-     <FilmDetails>
-        <FilmDetail>
-           <Film Code="BIGHERO"><![CDATA[Big Hero 6 (2014)]]></Film>
-           <Imdb>8.4</Imdb>
-           <FilmInformation>
-                <Director><![CDATA[Don Hall]]></Director> 
-                <Actors>
-                    <Actor1><![CDATA[Ryan Potter]]></Actor1>
-                    <Actor2><![CDATA[Scott Adsit]]></Actor2>
-                    <Actor3><![CDATA[Jamie Chung]]></Actor3>
-                </Actors>  
-           </FilmInformation>
-        </FilmDetail>
-     </FilmDetails>
-  </SearchFilmResult>
-  </ResultDetails>
+	<ResultDetails>
+		<SearchFilmResult ItemType="film">
+			<FilmDetails>
+				<FilmDetail>
+					<Film Code="BIGHERO"><![CDATA[Big Hero 6 (2014)]]></Film>
+					<Imdb>8.4</Imdb>
+					<FilmInformation>
+						<Directors>
+							<Director><![CDATA[Don Hall]]></Director>
+							<Director><![CDATA[Chris Williams]]></Director>
+						</Directors>
+						<Actors>
+							<Actor><![CDATA[Ryan Potter]]></Actor>
+							<Actor><![CDATA[Scott Adsit]]></Actor>
+							<Actor><![CDATA[Jamie Chung]]></Actor>
+						</Actors>
+					</FilmInformation>
+				</FilmDetail>
+			</FilmDetails>
+		</SearchFilmResult>
+	</ResultDetails>
 </Result>

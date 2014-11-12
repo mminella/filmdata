@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Result>
-  <ResultDetails>
-  <SearchFilmResult ItemType="film">
-     <FilmDetails>
-        <FilmDetail>
-           <Film Code="LOTR"><![CDATA[The Lord of the Rings: The Two Towers 2002]]></Film>
-           <Imdb>8.8</Imdb>
-           <FilmInformation>
-                <Director><![CDATA[Peter Jackson]]></Director> 
-                <Actors>
-                    <Actor1><![CDATA[Elijah Wood]]></Actor1>
-                    <Actor2><![CDATA[Ian McKellen]]></Actor2>
-                    <Actor3><![CDATA[Viggo Mortensen]]></Actor3>
-                </Actors>  
-           </FilmInformation>
-        </FilmDetail>
-     </FilmDetails>
-  </SearchFilmResult>
-  </ResultDetails>
+	<ResultDetails>
+		<SearchFilmResult ItemType="film">
+			<FilmDetails>
+				<FilmDetail>
+					<Film Code="LOTR"><![CDATA[The Lord of the Rings: The Two Towers 2002]]></Film>
+					<Imdb>8.8</Imdb>
+					<FilmInformation>
+						<Directors>
+							<Director><![CDATA[Peter Jackson]]></Director>
+						</Directors>
+						<Actors>
+							<Actor><![CDATA[Elijah Wood]]></Actor>
+							<Actor><![CDATA[Ian McKellen]]></Actor>
+							<Actor><![CDATA[Viggo Mortensen]]></Actor>
+						</Actors>
+					</FilmInformation>
+				</FilmDetail>
+			</FilmDetails>
+		</SearchFilmResult>
+	</ResultDetails>
 </Result>

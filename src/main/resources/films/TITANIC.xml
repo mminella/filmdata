@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Result>
-  <ResultDetails>
-  <SearchFilmResult ItemType="film">
-     <FilmDetails>
-        <FilmDetail>
-           <Film Code="TITANIC"><![CDATA[TITANIC 1997]]></Film>
-           <Imdb>7.7</Imdb>
-           <FilmInformation>
-                <Director><![CDATA[James Cameron]]></Director> 
-                <Actors>
-                    <Actor1><![CDATA[Leonardo DiCaprio]]></Actor1>
-                    <Actor2><![CDATA[Kate Winslet]]></Actor2>
-                    <Actor3><![CDATA[Frances Fisher]]></Actor3>
-                </Actors>  
-           </FilmInformation>
-        </FilmDetail>
-     </FilmDetails>
-  </SearchFilmResult>
-  </ResultDetails>
+	<ResultDetails>
+		<SearchFilmResult ItemType="film">
+			<FilmDetails>
+				<FilmDetail>
+					<Film Code="TITANIC"><![CDATA[TITANIC 1997]]></Film>
+					<Imdb>7.7</Imdb>
+					<FilmInformation>
+						<Directors>
+							<Director><![CDATA[James Cameron]]></Director>
+						</Directors>
+						<Actors>
+							<Actor1><![CDATA[Leonardo DiCaprio]]></Actor1>
+							<Actor2><![CDATA[Kate Winslet]]></Actor2>
+							<Actor3><![CDATA[Frances Fisher]]></Actor3>
+						</Actors>
+					</FilmInformation>
+				</FilmDetail>
+			</FilmDetails>
+		</SearchFilmResult>
+	</ResultDetails>
 </Result>

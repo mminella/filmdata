@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Result>
-  <ResultDetails>
-  <SearchFilmResult ItemType="film">
-     <FilmDetails>
-        <FilmDetail>
-           <Film Code="AVATAR"><![CDATA[AVATAR 2009]]></Film>
-           <Imdb>7.9</Imdb>
-           <FilmInformation>
-                <Director><![CDATA[James Cameron]]></Director> 
-                <Actors>
-                    <Actor1><![CDATA[Sam Worthington]]></Actor1>
-                    <Actor2><![CDATA[Zoe Saldana]]></Actor2>
-                    <Actor3><![CDATA[Sigourney Weaver]]></Actor3>
-                </Actors>  
-           </FilmInformation>
-        </FilmDetail>
-     </FilmDetails>
-  </SearchFilmResult>
-  </ResultDetails>
+	<ResultDetails>
+		<SearchFilmResult ItemType="film">
+			<FilmDetails>
+				<FilmDetail>
+					<Film Code="AVATAR"><![CDATA[AVATAR 2009]]></Film>
+					<Imdb>7.9</Imdb>
+					<FilmInformation>
+						<Directors>
+							<Director><![CDATA[James Cameron]]></Director>
+						</Directors>
+						<Actors>
+							<Actor><![CDATA[Sam Worthington]]></Actor>
+							<Actor><![CDATA[Zoe Saldana]]></Actor>
+							<Actor><![CDATA[Sigourney Weaver]]></Actor>
+						</Actors>
+					</FilmInformation>
+				</FilmDetail>
+			</FilmDetails>
+		</SearchFilmResult>
+	</ResultDetails>
 </Result>
