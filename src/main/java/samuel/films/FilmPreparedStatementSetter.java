@@ -13,7 +13,6 @@ public class FilmPreparedStatementSetter implements ItemPreparedStatementSetter<
         ps.setString(1, result.getFilmCode());
 		ps.setString(2, result.getFilmName());
 		ps.setString(3, result.getImdb());
-		ps.setString(4, result.getDirectors());
     }
  
 }

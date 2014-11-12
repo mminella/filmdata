@@ -20,9 +20,6 @@ public class Film {
 	@XmlElement(name = "Imdb")
 	private String imdb;
 
-	@XmlPath(value = "FilmInformation/Director/text()")
-	private String directors;
-
 	public String getFilmCode() {
 		return filmCode;
 	}
@@ -35,14 +32,10 @@ public class Film {
 		return imdb;
 	}
 
-	public String getDirectors() {
-		return directors;
-	}
-
 	@Override
 	public String toString() {
 		return "Film [filmCode= " + filmCode + ", filmName= " + filmName
-				+ ", directors= " + directors + ", imdb= " + imdb + "]";
+				+ ", imdb= " + imdb + "]";
 	}
 
 }
