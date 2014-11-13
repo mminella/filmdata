@@ -37,7 +37,7 @@
 	</bean>
 
 	<!-- ItemWriter which writes data to database -->
-	<bean id="databaseItemWriter"
+	<bean id="filmItemWriter"
 		class="org.springframework.batch.item.database.JdbcBatchItemWriter">
 		<property name="dataSource" ref="dataSource" />
 		<property name="sql">
@@ -52,10 +52,36 @@
 			<bean class="samuel.films.FilmPreparedStatementSetter" />
 		</property>
 	</bean>
+	
+	<bean id=actorItemWriter"
+		class="org.springframework.batch.item.database.JdbcBatchItemWriter">
+		<property name="dataSource" ref="dataSource" />
+		<property name="sql">
+			<value>
+                <![CDATA[        
+                    insert ignore into actors(name) values (?)
+                ]]>
+			</value>
+		</property>
+
+		<property name="ItemPreparedStatementSetter">
+			<bean class="samuel.films.ActorPreparedStatementSetter" />
+		</property>
+	</bean>
 
 	<!-- Optional ItemProcessor to perform business logic/filtering on the input 
 		records -->
-	<bean id="itemProcessor" class="samuel.films.FilmProcessor" />
+	<!-- <bean id="itemProcessor" class="samuel.films.FilmProcessor" /> -->
+	
+	<bean id="compositeItemProcessor"
+		class="org.springframework.batch.item.support.CompositeItemProcessor">
+		<property name="delegates">
+			<list>
+				<bean class="samuel.films.FilmProcessor" />
+				<bean class="samuel.films.ActorProcessor" />
+			</list>
+		</property>
+	</bean>
 
 	<!-- Optional JobExecutionListener to perform business logic before and 
 		after the job -->
@@ -70,7 +96,7 @@
 		<batch:step id="step1">
 			<batch:tasklet transaction-manager="transactionManager">
 				<batch:chunk reader="itemReader" writer="databaseItemWriter"
-					processor="itemProcessor" commit-interval="10" />
+					processor="compositeItemProcessor" commit-interval="20" />
 			</batch:tasklet>
 		</batch:step>
 		<batch:listeners>
