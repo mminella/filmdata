@@ -1,28 +1,39 @@
 package samuel.films.entity;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlValue;
 
-@XmlRootElement(name = "Actors")
-@XmlAccessorType(XmlAccessType.FIELD)
+@Entity
+@Table(name = "actors")
 public class Actor {
 
-	@XmlElement(name = "Actors")
-	private String actor;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
 
-	public String getActor() {
-		return actor;
+	@XmlValue
+	@Column(name = "name", nullable = false)
+	private String name;
+
+	public long getId() {
+		return id;
 	}
 
-	public void setActor(String actor) {
-		this.actor = actor;
+	public void setId(long id) {
+		this.id = id;
 	}
 
-	@Override
-	public String toString() {
-		return "Actor [name= " + actor + "]";
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
