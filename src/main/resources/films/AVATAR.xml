@@ -4,16 +4,16 @@
 		<SearchFilmResult ItemType="film">
 			<FilmDetails>
 				<FilmDetail>
-					<Film Code="INCEPTION"><![CDATA[INCEPTION 2010]]></Film>
-					<Imdb>8.8</Imdb>
+					<Film Code="AVATAR"><![CDATA[AVATAR 2009]]></Film>
+					<Imdb>7.9</Imdb>
 					<FilmInformation>
 						<Directors>
-							<Director><![CDATA[Christopher Nolan]]></Director>
+							<Director><![CDATA[James Cameron]]></Director>
 						</Directors>
 						<Actors>
-							<Actor><![CDATA[Leonardo DiCaprio]]></Actor>
-							<Actor><![CDATA[Joseph Gordon-Levitt]]></Actor>
-							<Actor><![CDATA[Ellen Page]]></Actor>
+							<Actor><![CDATA[Sam Worthington]]></Actor>
+							<Actor><![CDATA[Zoe Saldana]]></Actor>
+							<Actor><![CDATA[Sigourney Weaver]]></Actor>
 						</Actors>
 					</FilmInformation>
 				</FilmDetail>

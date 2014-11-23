@@ -4,16 +4,17 @@
 		<SearchFilmResult ItemType="film">
 			<FilmDetails>
 				<FilmDetail>
-					<Film Code="INCEPTION"><![CDATA[INCEPTION 2010]]></Film>
-					<Imdb>8.8</Imdb>
+					<Film Code="BIGHERO"><![CDATA[Big Hero 6 (2014)]]></Film>
+					<Imdb>8.4</Imdb>
 					<FilmInformation>
 						<Directors>
-							<Director><![CDATA[Christopher Nolan]]></Director>
+							<Director><![CDATA[Don Hall]]></Director>
+							<Director><![CDATA[Chris Williams]]></Director>
 						</Directors>
 						<Actors>
-							<Actor><![CDATA[Leonardo DiCaprio]]></Actor>
-							<Actor><![CDATA[Joseph Gordon-Levitt]]></Actor>
-							<Actor><![CDATA[Ellen Page]]></Actor>
+							<Actor><![CDATA[Ryan Potter]]></Actor>
+							<Actor><![CDATA[Scott Adsit]]></Actor>
+							<Actor><![CDATA[Jamie Chung]]></Actor>
 						</Actors>
 					</FilmInformation>
 				</FilmDetail>
