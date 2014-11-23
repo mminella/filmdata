@@ -8,9 +8,9 @@ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 		destroy-method="close">
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		<property name="jdbcUrl"
-			value="jdbc:mysql://film.cda9bjp7yc2s.us-west-1.rds.amazonaws.com:3306/films" />
-		<property name="user" value="film" />
-		<property name="password" value="filmdata" />
+			value="jdbc:mysql://sql4.freemysqlhosting.net:3306/sql459186" />
+		<property name="user" value="sql459186" />
+		<property name="password" value="dP2%jL7*" />
 	</bean>
 
 </beans>            

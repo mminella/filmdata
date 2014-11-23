@@ -16,7 +16,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <list>
-                <value>samuel.films.enity</value>
+                <value>samuel.films.entity</value>
             </list>
         </property>
         <property name="hibernateProperties">

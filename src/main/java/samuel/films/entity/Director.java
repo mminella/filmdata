@@ -14,7 +14,7 @@ public class Director {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private int id;
 
 	@XmlValue
 	@Column(name = "name", nullable = false)
@@ -24,7 +24,7 @@ public class Director {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
